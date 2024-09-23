@@ -12,6 +12,11 @@ async def root():
     return FileResponse("templates/index.html")
 
 
+@app.get("/first")
+async def root():
+    return FileResponse("templates/first_semester.html")
+
+
 @app.post("/services")
 async def submit_form(name: str = Form(),
                       email: str = Form(),
