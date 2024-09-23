@@ -1,0 +1,98 @@
+:root {
+    --main-link-text-color: black;
+    --visited-link-color: green;
+    --hover-link-color: pink;
+}
+
+a, a:link {
+    text-decoration: none;
+    color: var(--main-link-text-color);
+}
+
+a:hover {
+    color: var(--hover-link-color);
+}
+
+a:active {
+    color: #85626AFF;
+}
+
+a:visited {
+    color: var(--visited-link-color)
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logo > img {
+    width: 40px;
+    height: 40px;
+}
+
+.site-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    padding-right: 50px;
+    flex: 1;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.aside::after {
+    border: solid;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.site-owner-info {
+    flex: 1;
+    text-align: center;
+}
+
+.social-links {
+    align-items: flex-end;
+    margin-right: 50px;
+    display: flex;
+}
+
+.social-link_img {
+    display: flex;
+    align-items: center;
+}

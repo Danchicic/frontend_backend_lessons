@@ -1,0 +1,17 @@
+aside {
+    /*padding-right: 50px;*/
+    flex: 1;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-wrapper {
+    flex: 6;
+}

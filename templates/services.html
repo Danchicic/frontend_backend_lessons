@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Устанавливает кодировку документа -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Указывает браузеру использовать режим совместимости -->
+    <title>Document</title> <!-- Заголовок документа -->
+
+    <link rel="stylesheet" href="static/css/card.css">
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/services.css">
+    <link rel="stylesheet" href="static/css/form.css">
+    <script src="static/js/jqueryY.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+            type="text/javascript"></script>
+</head>
+<body>
+<nav class="nav"> <!-- Навигационная панель -->
+    <div class="about-me"> <!-- Блок с информацией о пользователе -->
+        <div class="logo"> <!-- Логотип -->
+            <img src="static/img/img.png" alt=""> <!-- Изображение логотипа -->
+        </div>
+        <div class="base-info"> <!-- Основная информация о пользователе -->
+            <div class="group-info"> <!-- Информация о группе -->
+                <div class="group-text">
+                    Группа: <b>ЭФБО-09-23</b> <!-- Название группы -->
+                </div>
+            </div>
+            <div class="name"> <!-- Имя пользователя -->
+                <div class="name-text">
+                    Гусевский Даниил Алексеевич <!-- Полное имя -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="site-nav"> <!-- Ссылки навигации по сайту -->
+        <li>
+            <div class="nav-item"><a href="/" class="nav-item-text">Главная</a></div>
+            <!-- Ссылка на главную страницу -->
+        </li>
+        <li>
+            <div class="nav-item"><a href="#" class="nav-item-text">Первый семестр</a></div>
+            <!-- Ссылка на первый семестр -->
+        </li>
+        <li>
+            <div class="nav-item"><a href="#" class="nav-item-text">Второй семестр</a></div>
+            <!-- Ссылка на второй семестр -->
+        </li>
+        <li>
+            <div class="nav-item"><a href="services" class="nav-item-text">Услуги</a></div> <!-- Ссылка на услуги -->
+        </li>
+        <li>
+            <div class="nav-item"><a href="#" class="nav-item-text">Авторизация</a></div>
+            <!-- Ссылка на авторизацию -->
+        </li>
+    </ul>
+</nav>
+<main>
+
+
+    <aside class="page-nav"> <!-- Боковая навигация -->
+        <div class="page-nav-item"><h2>Навигация по странице</h2></div> <!-- Заголовок боковой навигации -->
+        <div class="page-nav-item"><a href="/" class="page-nav-text">Фронтенд</a></div> <!-- Ссылка на фронтенд -->
+        <div class="page-nav-item"><a href="/" class="page-nav-text">Бэкэнд</a></div> <!-- Ссылка на бэкэнд -->
+    </aside>
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="card-preview">
+                <div class="card-preview__img">
+                    <img src="static/img/minon.jpeg" alt="" class="card-img">
+                </div>
+                <div class="card-actions">
+
+                    <div class="card-text">
+                        minon1
+                    </div>
+                    <button class="order-button" id="minon1">
+                        Заказать
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-preview">
+                <div class="card-preview__img">
+                    <img src="static/img/minon.jpeg" alt="" class="card-img">
+                </div>
+                <div class="card-actions">
+
+                    <div class="card-text">
+                        minon2
+                    </div>
+                    <button class="order-button" id="minon2">
+                        Заказать
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-preview">
+                <div class="card-preview__img">
+                    <img src="static/img/minon.jpeg" alt="" class="card-img">
+                </div>
+                <div class="card-actions">
+
+                    <div class="card-text">
+                        minon3
+                    </div>
+                    <button class="order-button" id="minon3">
+                        Заказать
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <form action="/services" class="form-list" id="form" method="post">
+        <div class="form-field">
+            <span class="label-text">Name:</span>
+            <input type="text" class="form-input" name="name" id="name">
+            <label class="form-label" for="name">
+
+            </label>
+        </div>
+        <div class="form-field">
+            <span class="label-text">Email:</span>
+            <input type="text" class="form-input" name="email" id="email">
+            <label class="form-label" for="email">
+
+            </label>
+        </div>
+        <div class="form-field">
+
+            <span class="label-text">
+                Phone:
+            </span>
+            <input type="text" class="form-input" name="phone" id="phone">
+            <label class="form-label" for="phone">
+            </label>
+
+        </div>
+        <div class="form-field">
+            <span class="label-text">Country:</span>
+            <select id="country" name="country">
+                <option value="ru">Russia</option>
+                <option value="us">America</option>
+                <option value="uz">Uzbekistan</option>
+            </select>
+            <label class="form-label" for="country">
+            </label>
+        </div>
+        <div class="form-field">
+            <span class="label-text">Date</span>
+            <input type="date" class="form-input" id="date" name="date">
+            <label class="form-label" for="date">
+            </label>
+        </div>
+        <div class="form-field">
+          <span class="label-text">
+                Comment:
+          </span>
+            <textarea type="" class="form-input" id="comment" name="comment"> </textarea>
+            <label class="form-label" for="comment">
+            </label>
+        </div>
+        <div class="form-field">
+            <label class="form-label" for="tos">
+                <span id="tos-required" style="display: none;color:red;">Необходимо нажать на это поле перед отправкой формы</span>
+                <span class="label-checkbox">
+                Согласен на обработку персональных данных
+            </span>
+                <input type="checkbox" class="form-input" id="tos">
+            </label>
+        </div>
+        <div class="submit-button">
+            <button type="submit">
+                <span class="submit-button-text">Отправить заявку</span>
+            </button>
+        </div>
+    </form>
+
+
+</main>
+<footer>
+    <div class="site-owner-info">
+        © Гусевский Даниил Алексеевич, 2024 <!-- Информация о владельце сайта -->
+    </div>
+    <div class="social-links"> <!-- Социальные ссылки -->
+        <ul class="social-link">
+            <li>
+                <img src="static/img/vk_logo.png" alt="vk" class="social-link_img">
+                <!-- Логотип социальной сети ВКонтакте -->
+            </li>
+        </ul>
+    </div>
+</footer>
+<div class="body-overlay"></div>
+<script src="static/js/open_form.js"></script>
+</body>
+</html>
