@@ -1,5 +1,9 @@
-.site-wrapper{
+.site-wrapper {
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
+}
+
+.pdf {
+    height: 1440px;
 }
